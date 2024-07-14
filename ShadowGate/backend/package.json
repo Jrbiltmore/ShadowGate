@@ -1,0 +1,6 @@
+{
+    "name": "Shadow Gate",
+    "version": "1.0.0",
+    "description": "A system for detecting and simulating money laundering",
+    "main": "index.js"
+}

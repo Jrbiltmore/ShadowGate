@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Gate - Zenith Version</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Shadow Gate</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h2>Welcome to Shadow Gate</h2>
+            <p>The most advanced system for detecting and simulating money laundering activities using cutting-edge AI and quantum computing technologies.</p>
+            <button id="learn-more">Learn More</button>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="container">
+            <h2>Features</h2>
+            <ul>
+                <li>Real-time transaction monitoring</li>
+                <li>Advanced pattern recognition</li>
+                <li>AI-driven character and plot development</li>
+                <li>Quantum computing for decryption simulations</li>
+                <li>Interactive data visualizations</li>
+            </ul>
+
+            <canvas id="transactionChart"></canvas>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shadow Gate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize the transaction chart
+        const ctx = document.getElementById('transactionChart').getContext('2d');
+        const transactionChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Transactions',
+                    data: [120, 150, 180, 200, 170, 220, 240],
+                    backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                    borderColor: 'rgba(0, 123, 255, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
